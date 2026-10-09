@@ -100,3 +100,240 @@ label {
     cursor: not-allowed;
     box-shadow: none;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(135deg, #ffc1df, #ff75b5, #f52f91);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+/* QUADRO PRINCIPAL */
+
+header {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+
+    background: #fff7fc;
+    border: 5px solid #ff3f98;
+    border-radius: 35px;
+
+    padding: 30px 45px;
+
+    box-shadow: 0 15px 35px rgba(180, 20, 100, 0.3);
+
+    position: relative;
+}
+
+/* FOTO E LOGIN */
+
+.usuario {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logotipo {
+    width: 65px;
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #ff3f98;
+
+    box-shadow: 0 4px 10px rgba(200, 30, 120, 0.3);
+}
+
+#nomeLogin {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #a51762;
+}
+
+/* CONTADOR DE TEMPO */
+
+#tempo {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+
+    margin: 0;
+    padding: 8px 18px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #a51762;
+    background: #ffe0ef;
+
+    border: 2px solid #ff8fbd;
+    border-radius: 20px;
+}
+
+/* TÍTULO DO SITE */
+
+h1 {
+    padding-top: 115px;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 52px;
+    line-height: 1.4;
+
+    color: #ed2380;
+
+    text-shadow: 3px 3px 0 #ffc1df;
+}
+
+/* BOTÕES */
+
+a,
+#Ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65%;
+    max-width: 600px;
+    min-height: 75px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 18px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* BOTÃO LOGIN */
+
+a {
+    margin-top: 100px;
+
+    padding: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    background: #ff3f98;
+
+    border: 3px solid #ff3f98;
+
+    box-shadow: 0 7px 15px rgba(210, 30, 120, 0.3);
+}
+
+/* BOTÃO RANKING */
+
+#Ranking {
+    margin-top: 20px;
+    padding: 15px;
+
+    color: #ff3f98;
+    background: white;
+
+    border: 4px solid #ff3f98;
+
+    box-shadow: 0 7px 15px rgba(210, 30, 120, 0.2);
+}
+
+/* EFEITOS AO PASSAR O MOUSE */
+
+a:hover {
+    background: #e91d78;
+    border-color: #e91d78;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(210, 30, 120, 0.35);
+}
+
+#Ranking:hover {
+    background: #ffe0ef;
+    transform: translateY(-4px);
+}
+
+/* EFEITO AO CLICAR */
+
+a:active,
+#Ranking:active {
+    transform: scale(0.97);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+    header {
+        min-height: 600px;
+        padding: 25px 15px;
+    }
+
+    .usuario {
+        left: 15px;
+        top: 25px;
+        gap: 8px;
+    }
+
+    #logotipo {
+        width: 45px;
+        height: 45px;
+    }
+
+    #nomeLogin {
+        font-size: 12px;
+    }
+
+    #tempo {
+        right: 15px;
+        top: 35px;
+
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        padding-top: 100px;
+        font-size: 32px;
+    }
+
+    a,
+    #Ranking {
+        width: 90%;
+        min-height: 65px;
+        font-size: 17px;
+    }
+
+    a {
+        margin-top: 90px;
+    }
+}
